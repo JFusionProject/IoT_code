@@ -16,7 +16,6 @@ def server(ip, port, thread):
       print(e)
     except KeyboardInterrupt:
         print('수동 종료')
-
 def send(writer, data):
   writer.write(struct.pack('<L', len(data)))
   writer.write(data)
